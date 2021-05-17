@@ -1,0 +1,40 @@
+:host {
+  display:block;
+  margin-top: 3rem;
+}
+
+.mat-elevation-z4 {
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.mat-elevation-z4:hover{
+  transform: scale(1.01);
+box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+/* .post-image {
+  width: 50%;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.image {
+  align-items: center;
+} */
+
+
+.content {
+  padding: 16px;
+}
+
+.content > mat-card {
+  width: 200px;
+}
+
+.delspace {
+  margin-left: 25px;
+}
+
+.editspace {
+  margin-right: 25px;
+}
+

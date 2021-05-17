@@ -1,0 +1,21 @@
+<mat-toolbar color="primary">
+  <span>
+    <button mat-button (click)="pollVote()">Poll Your Vote</button>
+  </span>
+  <span class="spacer"></span>
+  <ul>
+
+    <li *ngIf="userIsAuthenticated">
+      <a mat-button routerLink="/create" routerLinkActive="mat-accent">Create Party</a>
+    </li>
+    <li *ngIf="!userIsAuthenticated">
+      <a mat-button routerLink="" routerLinkActive="mat-accent">Login</a>
+    </li>
+    <li *ngIf="!userIsAuthenticated">
+      <a mat-button routerLink="/register" routerLinkActive="mat-accent">SignUp</a>
+    </li>
+    <li *ngIf="userIsAuthenticated">
+      <button mat-button (click)="logOut()" >Logout</button>
+    </li>
+  </ul>
+</mat-toolbar>

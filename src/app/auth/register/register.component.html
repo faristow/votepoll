@@ -1,0 +1,37 @@
+<mat-card class="card">
+  <!-- <mat-spinner *ngIf="isLoading"></mat-spinner> -->
+  <form [formGroup] ="signUpForm" (submit)="onSignUp()" >
+    <!-- <mat-form-field>
+      <input
+        matInput
+        type="text"
+        formControlName="name"
+        placeholder="Enter your name"
+        required>
+      <mat-error *ngIf="signUpForm.get('name').invalid">Please enter a valid Name</mat-error>
+    </mat-form-field>!-->
+    <mat-form-field>
+      <input
+        matInput
+        type="email"
+        formControlName="email"
+        placeholder="E-mail"
+        required>
+      <mat-error *ngIf="signUpForm.get('email').invalid">Please enter a valid email</mat-error>
+    </mat-form-field>
+    <!-- <mat-form-field>
+      <input
+        matInput
+        type="text"
+        formControlName="aadhar"
+        placeholder="Enter your Aadhar number"
+        required>
+      <mat-error *ngIf="signUpForm.get('aadhar').invalid">Please enter a valid email</mat-error>
+    </mat-form-field> -->
+    <mat-form-field>
+      <input matInput type="password" required formControlName="password" placeholder="Password">
+      <mat-error *ngIf="signUpForm.get('password').invalid">Please enter a vaild password.</mat-error>
+    </mat-form-field>
+    <button mat-raised-button color="accent" type="submit" >SignUp</button>
+  </form>
+</mat-card>
