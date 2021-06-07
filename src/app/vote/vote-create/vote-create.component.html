@@ -35,22 +35,3 @@
 </mat-card>
 
 
-<!-- <mat-card>
-  <mat-spinner *ngIf="isLoading"></mat-spinner>
-  <form [formGroup] ="partyForm" (submit)="onAddParty()" *ngIf="!isLoading">
-    <mat-form-field>
-      <input
-        matInput
-        type="text"
-        formControlName="title"
-        placeholder="Party Title"
-        required>
-      <mat-error *ngIf="partyForm.get('title').invalid">Please enter a valid email</mat-error>
-    </mat-form-field>
-    <mat-form-field>
-      <input matInput type="text" required formControlName="contet" placeholder="Party Content">
-      <mat-error *ngIf="partyForm.get('content').invalid">Please enter a vaild password.</mat-error>
-    </mat-form-field>
-    <button mat-raised-button color="accent" type="submit" *ngIf="!isLoading">Login</button>
-  </form>
-</mat-card> -->
