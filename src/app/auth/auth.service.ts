@@ -176,5 +176,6 @@ private getAuthData(){
     expirationDate: new Date(expirationDate)
   }
 }
+
 }
 
